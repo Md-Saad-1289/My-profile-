@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "description": "Portfolio backend with Node.js, MongoDB, and Cloudinary",
   "main": "dist/index.js",
+  "type": "commonjs",
   "scripts": {
     "dev": "ts-node src/index.ts",
     "build": "tsc",
     "start": "node dist/index.js",
-    "watch": "tsc --watch"
+    "watch": "tsc --watch",
+    "clean": "rm -rf dist"
   },
   "keywords": [
     "portfolio",
