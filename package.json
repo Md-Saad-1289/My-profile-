@@ -2,22 +2,15 @@
   "name": "portfolio-backend",
   "version": "1.0.0",
   "description": "Portfolio backend with Node.js, MongoDB, and Cloudinary",
-  "main": "dist/index.js",
+  "main": "dist/server.js",
   "type": "commonjs",
   "scripts": {
-    "dev": "ts-node src/index.ts",
-    "build": "tsc",
-    "start": "node dist/index.js",
-    "watch": "tsc --watch",
-    "clean": "rm -rf dist"
+    "dev": "ts-node server/index.ts",
+    "build": "tsc --project server/tsconfig.json",
+    "start": "node dist/server.js",
+    "watch": "tsc --watch --project server/tsconfig.json"
   },
-  "keywords": [
-    "portfolio",
-    "backend",
-    "nodejs",
-    "mongodb",
-    "cloudinary"
-  ],
+  "keywords": ["portfolio", "backend", "nodejs", "mongodb", "cloudinary"],
   "author": "Md-Saad-1289",
   "license": "MIT",
   "dependencies": {
@@ -39,6 +32,7 @@
     "@types/multer": "^1.4.7",
     "@types/jsonwebtoken": "^9.0.3",
     "@types/bcryptjs": "^2.4.2",
+    "@types/morgan": "^1.9.5",
     "typescript": "^5.1.6",
     "ts-node": "^10.9.1"
   }
